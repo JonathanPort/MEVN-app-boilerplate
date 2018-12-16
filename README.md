@@ -1,5 +1,5 @@
 # MEVN App Boilerplate
-A quick pre-setup for a **MongoDB**, **ExpressJS**, **VueJS** and **NodeJS** based application.
+A quick pre-setup for **MongoDB**, **ExpressJS**, **VueJS** and **NodeJS** based applications.
 
 ## Features
 Backend comes pre-equiped with:
@@ -25,16 +25,16 @@ Frontend comes equiped with:
 ## Project setup
 1. Install dependencies:
 ```
-    npm install
+npm install
 ```
 2. Create and Setup .env file (see .env.example)
 3. Launch the Node server
 ```
-    // Standard start
-    npm run node-start
+// Standard start
+npm run node-start
 
-    // Nodemon watch
-    npm run node-watch
+// Nodemon watch
+npm run node-watch
 ```
 
 ## Compiling VueJS
