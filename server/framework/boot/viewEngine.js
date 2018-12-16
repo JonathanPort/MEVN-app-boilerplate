@@ -3,7 +3,7 @@
 | viewEngine.js
 |--------------------------------------------------------------------------
 |
-| This module sets up the view engine.
+| This module sets the Express application view engine.
 |
 */
 

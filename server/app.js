@@ -27,7 +27,8 @@ const dotenv = require('dotenv').config();
 | Bootstrap server modules
 |--------------------------------------------------------------------------
 |
-| Load in all modules from './boot' that are required for the app.
+| Load in all modules listed in './bootstrap/boot.js' that are
+| required for the app.
 |
 */
 

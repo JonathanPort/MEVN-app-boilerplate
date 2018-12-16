@@ -11,7 +11,7 @@ module.exports = {
     |
     */
 
-    host: env('DB_HOST', 'mongodb://localhost/express'),
+    host: env('DB_HOST', 'mongodb://localhost/express-app'),
 
 
 }

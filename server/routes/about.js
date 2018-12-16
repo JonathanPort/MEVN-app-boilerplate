@@ -1,5 +1,9 @@
-const router = require('./../framework/router')();
+const Router = require('express').Router();
+const Controller = require('./../framework/controller/ControllerResolver');
 
-router.get('/', 'AboutController@index');
 
-module.exports = router.expressInstance();
+Router.get('/', (req, res) => {
+    new Controller('AboutController@index', req, res);
+});
+
+module.exports = Router;

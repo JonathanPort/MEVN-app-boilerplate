@@ -15,17 +15,16 @@ module.exports = {
     |
     */
 
-    logger: require('./../framework/middleware/logger'),
-    viewEngine: require('./../framework/middleware/viewEngine'),
-    cookieParser: require('./../framework/middleware/cookieParser'),
-    bodyParser: require('./../framework/middleware/bodyParser'),
-    csrf: require('./../framework/middleware/csrf'),
-    promiseRejectionWrapper: require('./../framework/middleware/promiseRejectionWrapper'),
-    session: require('./../framework/middleware/session'),
-    auth: require('./../framework/middleware/auth'),
-    router: require('./../framework/middleware/router'),
-    errorHandling: require('./../framework/middleware/errorHandling'),
-    db: require('./../framework/middleware/db'),
-    server: require('./../framework/middleware/server')
+    logger: require('./../framework/boot/logger'),
+    viewEngine: require('./../framework/boot/viewEngine'),
+    bodyParser: require('./../framework/boot/bodyParser'),
+    cookieParser: require('./../framework/boot/cookieParser'),
+    csrf: require('./../framework/boot/csrf'),
+    session: require('./../framework/boot/session'),
+    promiseRejectionWrapper: require('./../framework/boot/promiseRejectionWrapper'),
+    router: require('./../framework/boot/router'),
+    errorHandling: require('./../framework/boot/errorHandling'),
+    db: require('./../framework/boot/database'),
+    server: require('./../framework/boot/server'),
 
 }

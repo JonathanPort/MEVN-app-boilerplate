@@ -1,11 +1,13 @@
 {
-  "name": "express-app-2",
+  "name": "mevn-app-boilerplate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "vue-watch": "vue-cli-service serve",
+    "vue-build": "vue-cli-service build",
+    "vue-lint": "vue-cli-service lint",
+    "node-start": "node ./server/app.js",
+    "node-watch": "nodemon ./server/app.js"
   },
   "dependencies": {
     "vue": "^2.5.17",
@@ -17,9 +19,22 @@
     "@vue/cli-plugin-eslint": "^3.2.0",
     "@vue/cli-service": "^3.2.0",
     "babel-eslint": "^10.0.1",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "csurf": "^1.9.0",
+    "debug": "^4.1.0",
+    "dotenv": "^6.2.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.4.0",
+    "mongoose-class-wrapper": "^0.9.0",
+    "morgan": "^1.9.1",
     "node-sass": "^4.9.0",
+    "nodemon": "^1.18.9",
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.17"
   }

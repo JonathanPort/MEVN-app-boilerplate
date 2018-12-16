@@ -1,20 +1,13 @@
-const router = require('./../framework/router')();
-const Test = require('./test');
-
-// let testClass = new Test;
-
-// console.log(testClass.testMethod());
+const Router = require('express').Router();
+const Controller = require('./../framework/controller/ControllerResolver');
 
 
+Router.get('/', (req, res) => {
+    new Controller('HomeController@index', req, res);
+});
 
-// testClass.get('/test', function (req, res) {
-//     console.log('Hello test');
-// });
+Router.post('/', (req, res) => {
+    new Controller('HomeController@indexPost', req, res);
+});
 
-router.get('/', 'HomeController@index');
-router.post('/', 'HomeController@indexPost');
-
-
-// router.request('get', );
-// module.exports = testClass;
-module.exports = router.expressInstance();
+module.exports = Router;

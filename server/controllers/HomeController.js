@@ -1,6 +1,5 @@
 const BaseController = require('./../framework/controller/BaseController');
-const mongoose = require('mongoose');
-const User = require('./../models/User');
+
 
 class HomeController extends BaseController {
 
