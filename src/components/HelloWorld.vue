@@ -37,6 +37,12 @@ export default {
     msg: String
   }
 }
+const axios = require('axios');
+
+axios.get('http://localhost/api').then((res) => {
+    console.log(res);
+});
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

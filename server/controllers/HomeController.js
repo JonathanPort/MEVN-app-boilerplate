@@ -8,7 +8,7 @@ class HomeController extends BaseController {
      * Start controller instance!
      */
     constructor(req, res) {
-        super(req, res)
+        super(req, res);
     }
 
 
@@ -17,7 +17,9 @@ class HomeController extends BaseController {
      */
     index() {
 
-        this.res.render('index', { _token: this.req.csrfToken() });
+        this.res.send({
+            _token: this.req.csrfToken()
+        });
 
     }
 
